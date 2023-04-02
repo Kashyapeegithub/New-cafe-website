@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>cafe 2</title>
+    <style>
+        body {
+          background-image: url("https://as1.ftcdn.net/v2/jpg/05/65/33/08/1000_F_565330835_82iYf8NLxUrpQRCCknIbDQ6lbloGLBmh.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+        }
+        h1 {
+  font-size: 70px;
+  text-align: center;
+}
+body {
+  font-family: "Sofia", sans-serif;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: white;
+}
+.tab button.active {
+  background-color: green;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid white;
+  border-top: none;
+}
+a{
+  font-size: 20px;
+}
+    </style>
+</head>
+<body><br>
+    <centre><h1 style="color:black;">THE MENU<br></h1></centre>    
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'COFFEE')">COFFEE</button>
+      <button class="tablinks" onclick="openCity(event, 'PASTA')">PASTA</button>
+      <button class="tablinks" onclick="openCity(event, 'STARTER')">STARTER</button>
+    </div>
+    <br><br>
+    <div id="COFFEE" class="tabcontent">
+      <h3>ESPRESSO-$1.50</h3>
+      <p>“Espresso is a miracle of chemistry in a cup”</p>
+      <h3>CAPPUCCINO-$3.00</h3>
+      <p>“All you need is love, a cappuccino, and a little bit of magic.”</p>
+      <h3>LATTE-$2.00</h3>
+      <p>“Better latte than never! ”</p>
+      <h3>AMERICANO-$3.50</h3>
+      <p>“I like my coffee like I like myself: strong, sweet, and too hot for you.”</p>
+      <h3>MOCHA-$2.50</h3>
+      <p>“May your coffee kick in before reality does.”</p>
+    </div>
+    <div id="PASTA" class="tabcontent">
+      <h3>LASAGNA-$500</h3>
+      <p>Special sauce, mozzarella, parmesan, ground beef.</p>
+      <h3>RAVIOLI-$6.00</h3>
+      <p>Ravioli filled with cheese.</p>
+      <h3>SPAGHETTI CLASSICA-$7.00</h3>
+      <p>Fresh tomatoes, onions, ground beef.</p>
+      <h3>SEAFOOD PASTA-$8.00</h3>
+      <p>Salmon, shrimp, lobster, garlic</p>
+      <h3>MAFALDINE-$7.50</h3>
+      <p>Shrimp, lemon, sausage, roasted pepper.</p>
+    </div>
+    <div id="STARTER" class="tabcontent">
+       <h3>TODAY'S SOUP-$2.00</h3>
+      <p>Ask the waiter.</p>
+      <h3>BRUSCHETTA-$3.00</h3>
+      <p>Bread with pesto, tomatoes, onion, garlic.</p>
+      <h3>GARLIC BREAD-$1.50</h3>
+      <p>Grilled ciabatta, garlic butter, onions.</p>
+      <h3>TOMOZZARELLA-$2.50</h3>
+      <p>Tomatoes and mozzarella.</p>
+      <h3>TODAY'S SPECIAL-$5.00</h3>
+      <p>cheese tava corn .</p>
+    </div>
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <a href="cafe3.html">ABOUT US</a>
+</body>
+</html>
